@@ -2408,10 +2408,42 @@ void rel (void){
 
 void relkecil (void){
     glPushMatrix();
-    glScaled(0.5, 0.05, 0.5);
-    glTranslatef(0.5, 3, -30);   
+    glScaled(0.03, 0.05, 0.25);
+    glTranslatef(450, 3, -1);   
     glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
-    glColor3f(1.0, 1.0, 1.0);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.03, 0.05, 0.25);
+    glTranslatef(470, 3, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.03, 0.05, 0.25);
+    glTranslatef(490, 3, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.03, 0.05, 0.25);
+    glTranslatef(510, 3, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.03, 0.05, 0.25);
+    glTranslatef(530, 3, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
     glutSolidCube(5.0);
     glPopMatrix();
 }
@@ -3055,16 +3087,100 @@ glPopMatrix();
 
 // R E L
 
-//rel
+//rel panjang
 glPushMatrix();
 glTranslatef(145,6.4,200); 
 glScalef(5, 5, 5);
 rel();
 glPopMatrix();
 
-//rel
+//rel panjang
 glPushMatrix();
 glTranslatef(145,6.4,196); 
+glScalef(5, 5, 5);
+rel();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(0,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(15,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(30,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(45,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(60,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(75,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(90,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(105,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(120,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(135,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(150,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(165,6.4,196); 
 glScalef(5, 5, 5);
 relkecil();
 glPopMatrix();
@@ -3073,6 +3189,111 @@ glPopMatrix();
 
 
 
+
+//rel panjang
+glPushMatrix();
+glTranslatef(145,6.4,38); 
+glScalef(5, 5, 5);
+rel();
+glPopMatrix();
+
+//rel panjang
+glPushMatrix();
+glTranslatef(145,6.4,34); 
+glScalef(5, 5, 5);
+rel();
+glPopMatrix();
+
+//rel panjang
+glPushMatrix();
+glTranslatef(145,6.4,34); 
+glScalef(5, 5, 5);
+rel();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(0,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(15,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(30,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(45,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(60,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(75,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(90,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(105,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(120,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(135,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(150,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(165,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
 
 
 
