@@ -22,7 +22,7 @@ using namespace std;
 float lastx, lasty;
 GLint stencilBits;
 static int viewx = 130;
-static int viewy = 110;
+static int viewy = 90;
 static int viewz = 200;
 
 float rot = 0;
@@ -2910,6 +2910,38 @@ ranting();
 glPopMatrix();
 glPopMatrix();
 
+//pohon kecil VI
+glPushMatrix();
+glTranslatef(140,6.4,50); 
+glScalef(0.2, 0.2, 0.2);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+glPopMatrix();
+
+//pohon kecil VI
+glPushMatrix();
+glTranslatef(210,6.4,50); 
+glScalef(0.2, 0.2, 0.2);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+glPopMatrix();
+
 //pohon VI
 glPushMatrix();
 glTranslatef(60,6.4,180);    
@@ -2937,12 +2969,94 @@ ranting();
 glPopMatrix();
 glPopMatrix();
 
+//pohon VII
+glPushMatrix();
+glTranslatef(115,6.4,50);    
+glScalef(0.3, 0.3, 0.3);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 VII
+ranting();
+
+//ranting2 VII
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 VII
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+glPopMatrix();
+
+
+
+//pohon VIII
+glPushMatrix();
+glTranslatef(165,6.4,50);    
+glScalef(0.3, 0.3, 0.3);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 VIII
+ranting();
+
+//ranting2 VIII
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 VIII
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+glPopMatrix();
+
+//pohon IX
+glPushMatrix();
+glTranslatef(195,6.4,50);    
+glScalef(0.3, 0.3, 0.3);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 IX
+ranting();
+
+//ranting2 IX
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 IX
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+glPopMatrix();
 
 
 
 
 
-//KERETA API
+// ============ KERETA API ====================
 glPushMatrix();
 glTranslatef(150,10,196);    
 glScalef(0.5,0.5,0.5);
@@ -3185,7 +3299,12 @@ glScalef(5, 5, 5);
 relkecil();
 glPopMatrix();
 
-
+//rel
+glPushMatrix();
+glTranslatef(180,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
 
 
 
@@ -3295,7 +3414,12 @@ glScalef(5, 5, 5);
 relkecil();
 glPopMatrix();
 
-
+//rel
+glPushMatrix();
+glTranslatef(180,6.4,34); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
 
 //==============================================================================
 
