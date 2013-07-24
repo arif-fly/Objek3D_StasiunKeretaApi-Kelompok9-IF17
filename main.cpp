@@ -21,8 +21,8 @@ using namespace std;
 
 float lastx, lasty;
 GLint stencilBits;
-static int viewx = 130;
-static int viewy = 90;
+static int viewx = 100;
+static int viewy = 100;
 static int viewz = 200;
 
 float rot = 0;
@@ -1656,7 +1656,105 @@ void kereta(){
     glutSolidSphere(1, 12, 50);
     glPopMatrix();
 
+    
+    
+    // === Gerbong ===
+    glPushMatrix();
+    glScaled(2, 1.4, 1.102);
+    glTranslatef(-10.1, 0, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,0.4,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+
+    glPushMatrix();
+    glScaled(2, 1.4, 1.102);
+    glTranslatef(-4.2, 0, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+              
+    glPushMatrix();
+    glScaled(2, 1.4, 1.102);
+    glTranslatef(1.78, 0, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,0.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+        
+    glPushMatrix();
+    glScaled(2.6, 1.4, 1.102);
+    glTranslatef(6.5, 0, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+         
+    glPushMatrix();
+    glScaled(1.5, 3, 1.102);
+    glTranslatef(9.5, 0, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+           
+    glPushMatrix();
+    glScaled(1, 1.2, 1.105);
+    glTranslatef(14, 2.9, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.0,0.0,1.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
                     
+    glPushMatrix();
+    glScaled(0.7, 0.6, 1.105);
+    glTranslatef(8, 1.5, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+                   
+    glPushMatrix();
+    glScaled(0.7, 0.6, 1.105);
+    glTranslatef(2, 1.5, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.7, 0.6, 1.105);
+    glTranslatef(-9, 1.5, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.7, 0.6, 1.105);
+    glTranslatef(-15, 1.5, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.7, 0.6, 1.105);
+    glTranslatef(-26, 1.5, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.7, 0.6, 1.105);
+    glTranslatef(-32, 1.5, -1);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0,1.0,0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+                  
 }
 
 
@@ -1804,6 +1902,7 @@ void gedung(void) {
     glScaled(1.015, 0.7, 0.035);
     glTranslatef(0, 1,116); 
     glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    loadTexture();
     glColor3f(0.4, 0.4, 0.4);   
     glutSolidCube(5.0);
     glPopMatrix();
@@ -2398,7 +2497,7 @@ glPopMatrix();
 
 void rel (void){
     glPushMatrix();
-    glScaled(8, 0.05, 0.02);
+    glScaled(10, 0.05, 0.02);
     glTranslatef(0.5, 3, -30);   
     glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
     glColor3f(1.0, 1.0, 1.0);
@@ -2449,6 +2548,89 @@ void relkecil (void){
 }
 
 
+// === rel kecil horizontal ===
+void relkecilhorizontal (void){
+    glPushMatrix();
+    glScaled(0.28, 0.05, 0.03);
+    glTranslatef(42, 3, -495);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+
+    glPushMatrix();
+    glScaled(0.28, 0.05, 0.03);
+    glTranslatef(42, 3, -480);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+ 
+    glPushMatrix();
+    glScaled(0.28, 0.05, 0.03);
+    glTranslatef(42, 3, -465);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.28, 0.05, 0.03);
+    glTranslatef(42, 3, -450);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+    glPushMatrix();
+    glScaled(0.28, 0.05, 0.03);
+    glTranslatef(42, 3, -435);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 0.5, 0.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+     
+}
+
+
+
+// === REL vertikal ===
+
+void relvertikal(void){
+    glPushMatrix();
+    glScaled(0.0305, 0.05, 2.25);
+    glTranslatef(530, 3, -5);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 1.0, 1.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+
+    glPushMatrix();
+    glScaled(0.0305, 0.05, 2.25);
+    glTranslatef(505, 3, -5);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 1.0, 1.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+}
+
+
+
+// === rel belok === 
+
+void relbelok (void){
+    glPushMatrix();
+    glScaled(0.03, 0.05, 0.20);
+    glTranslatef(405, 3, -27);   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1.0, 1.0, 1.0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+     
+     
+}
+
+
 
 
 
@@ -2463,8 +2645,7 @@ void display(void) {
 	glClearColor(0.0, 0.6, 0.8, 1);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //clear the buffers
 	glLoadIdentity();
-	gluLookAt(viewx, viewy, viewz, 0.0, 0.0, 5.0, 0.0, 1.0, 0.0);
-
+	gluLookAt(viewx, viewy, viewz, 0.0, 0.0, 10.0, 0.0, 1.0, 0.0);               
 	glPushMatrix();
 
 	//glBindTexture(GL_TEXTURE_3D, texture[0]);
@@ -3199,7 +3380,7 @@ awan();
 glPopMatrix();
 
 
-// R E L
+// ============== R E L =========================
 
 //rel panjang
 glPushMatrix();
@@ -3213,6 +3394,13 @@ glPushMatrix();
 glTranslatef(145,6.4,196); 
 glScalef(5, 5, 5);
 rel();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(-15,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
 glPopMatrix();
 
 //rel
@@ -3306,6 +3494,23 @@ glScalef(5, 5, 5);
 relkecil();
 glPopMatrix();
 
+//rel
+glPushMatrix();
+glTranslatef(195,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+//rel
+glPushMatrix();
+glTranslatef(210,6.4,196); 
+glScalef(5, 5, 5);
+relkecil();
+glPopMatrix();
+
+
+
+
 
 
 
@@ -3329,6 +3534,8 @@ glTranslatef(145,6.4,34);
 glScalef(5, 5, 5);
 rel();
 glPopMatrix();
+
+
 
 //rel
 glPushMatrix();
@@ -3420,6 +3627,174 @@ glTranslatef(180,6.4,34);
 glScalef(5, 5, 5);
 relkecil();
 glPopMatrix();
+
+
+// === rel vertikal ===
+
+//rel panjang
+glPushMatrix();
+glTranslatef(-60,6.4,196); 
+glScalef(5, 5, 5);
+relvertikal();
+glPopMatrix();
+
+// rel pendek
+
+glPushMatrix();
+glTranslatef(-40,6.4,196); 
+glScalef(5, 5, 5);
+relkecilhorizontal();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-40,6.4,207); 
+glScalef(5, 5, 5);
+relkecilhorizontal();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-40,6.4,218); 
+glScalef(5, 5, 5);
+relkecilhorizontal();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-40,6.4,229); 
+glScalef(5, 5, 5);
+relkecilhorizontal();
+glPopMatrix();
+
+
+
+
+
+
+
+
+// === rel belok ===
+
+//rel
+glPushMatrix();
+glTranslatef(-27, 3, 215); 
+glRotatef(20,1,4,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-30.9, 3, 215); 
+glRotatef(20,1,4,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-20, 4.5, 227); 
+glRotatef(30,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-16.2, 4.2, 227); 
+glRotatef(30,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-3.5, 3.5, 237); 
+glRotatef(40,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-7.5, 3.5, 237); 
+glRotatef(40,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(1.2, 3, 243); 
+glRotatef(45,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(5, 3, 243); 
+glRotatef(45,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+
+
+glPushMatrix();
+glTranslatef(14.3, 3.5, 248.4); 
+glRotatef(50,1,15,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(41.5, 2.5, 258.5); 
+glRotatef(65,1,15,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(25.8, 3.5, 255); 
+glRotatef(55,1,15,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(17, 3.5, 251); 
+glRotatef(50,1,15,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+
+
+
+glPushMatrix();
+glTranslatef(7.5, 3, 247); 
+glRotatef(48,1,10,0);
+glScalef(5, 5, 5);
+relbelok();
+glPopMatrix();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //==============================================================================
 
